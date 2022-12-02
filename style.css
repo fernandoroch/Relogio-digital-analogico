@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#0375f7, #1beaf1);
+  z-index: 10;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.circle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #fff5,
+  0 0 0 20px #333,
+  0 0 0 22px #fff5,
+  0 0 50px #fff,
+  0 0 450px #fff;
+}
+
+ul li {
+  position: absolute;
+  top: 10px;
+  list-style: none;
+  transform-origin: 0 190px;
+  transform: rotate(calc(32.4deg * var(--i)));
+  font-size: 1.5em; 
+}
+
+ul li span {
+  display: inline-block;
+  color: #fff;
+  transform: rotate(calc(-32.4deg * var(--i)));
+  text-shadow: 0 0 15px #fff,
+  0 0 35px #fff,
+  0 0 75px #fff,
+  0 0 150px #fff;
+}
+
+ul.words li {
+  position: absolute;
+  top: -60px;
+  list-style: none;
+  transform-origin: 0 260px;
+  transform: rotate(calc(32.4deg * var(--i)));
+  font-size: 1.8em; 
+}
+
+
+.p {
+  transform-origin: left;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.p_s {
+  width: 150px;
+  height: 3px;
+  background-color: #fff;
+}
+.p_m {
+  width: 120px;
+  height: 7px;
+  background-color: #FFF;
+}
+.p_h {
+  width: 80px;
+  height: 10px;
+  background-color: #FFF;
+}
+.encaixe {
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+.block {
+  display: none;
+}
+
+.active {
+  display: inline-block;
+}
+
+.words li span {
+  color: #f7f6f6;
+  text-transform: uppercase;
+}
+
+.digital {
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: #1beaf1;
+  text-shadow: 0 0 15px #fff,
+  0 0 35px #fff,
+  0 0 75px #fff,
+  0 0 150px #fff;
+}
