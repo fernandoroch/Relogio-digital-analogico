@@ -43,14 +43,14 @@ ul li {
   top: 10px;
   list-style: none;
   transform-origin: 0 190px;
-  transform: rotate(calc(32.4deg * var(--i)));
+  transform: rotate(calc(28.8deg * var(--i)));
   font-size: 1.5em; 
 }
 
 ul li span {
   display: inline-block;
   color: #fff;
-  transform: rotate(calc(-32.4deg * var(--i)));
+  transform: rotate(calc(-28.8deg * var(--i)));
   text-shadow: 0 0 15px #fff,
   0 0 35px #fff,
   0 0 75px #fff,
