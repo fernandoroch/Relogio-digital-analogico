@@ -62,7 +62,7 @@ ul.words li {
   top: -60px;
   list-style: none;
   transform-origin: 0 260px;
-  transform: rotate(calc(32.4deg * var(--i)));
+  transform: rotate(calc(28.8deg * var(--i)));
   font-size: 1.8em; 
 }
 
